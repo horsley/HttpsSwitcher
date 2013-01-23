@@ -20,7 +20,7 @@ HTTPS + Hosts是可以直接突破的，同时本插件还能帮你记录请求�
 本来想发布到Chrome web store发现好麻烦，还要支付5刀。5刀不是问题，问题是支付不了，点击支付一直跳回
 Dashboard，因此只能下载Crx文件手动安装了
 
-1. 下载扩展Crx文件：[从Github下载](http://horsley.github.com/HttpsSwitcher/httpsSwitcher.crx)、[微盘下载](http://vdisk.weibo.com/s/oq1II)
+1. 下载扩展Crx文件：[从Github下载](http://horsley.github.com/HttpsSwitcher/httpsSwitcher.crx) (不要直接点击，用右键链接另存为)、[微盘下载](http://vdisk.weibo.com/s/oq1II)
 2. 打开你[Chrome浏览器的扩展程序页面](chrome://extensions/)
 3. 把下载到的Crx文件拖放到扩展程序页面中，会出现安装授权提示，允许后即安装成功
 
