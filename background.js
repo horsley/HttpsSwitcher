@@ -43,6 +43,15 @@ chrome.webRequest.onErrorOccurred.addListener(function(details) {
 	var url = (new RegExp('^http://([^/@]+@)?([^/@]+)/(.*)').exec(details.url)); 
 	var domain = url[2];
 
+	//filter some common errors
+	var common_errors = [
+			'net::ERR_ABORTED',	//just manual stop	
+			'net::ERR_BLOCKED_BY_CLIENT' //adBlock
+		];
+	if (in_array(details.error, common_errors)) { 
+		return;
+	} 
+
 	if (!in_array(domain, httpFailDomains)) {
 		httpFailDomains.push(domain);
 		requestFailDetail[domain] = details.error; //log fail domain and error detail

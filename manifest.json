@@ -15,5 +15,6 @@
    "name": "HTTPS Switcher",
    "options_page": "options.html",
    "permissions": [ "*://*/", "tabs", "webRequest", "webRequestBlocking" ],
-   "version": "1.0.0"
+   "update_url": "https://raw.github.com/horsley/HttpsSwitcher/gh-pages/update.xml",
+   "version": "1.0.1"
 }
